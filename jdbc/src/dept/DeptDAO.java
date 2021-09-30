@@ -23,7 +23,7 @@ public class DeptDAO {
 		
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection(url, user, password)
+			con = DriverManager.getConnection(url, user, password);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
