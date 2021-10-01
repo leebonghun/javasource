@@ -9,6 +9,9 @@ public class DeptMain {
 		Scanner sc = new Scanner(System.in);
 		
 		while(run) {
+			System.out.println("***********************");
+			System.out.println("1. 전체 부서 조회");
+			System.out.println("2. 특정 부서 조회");
 			
 			
 		}
