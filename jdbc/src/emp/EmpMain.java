@@ -77,7 +77,7 @@ public class EmpMain {
 				break;
 			case 4:
 				System.out.print("\n수정 사원 번호 : ");
-				empno = sc.nextInt();
+				empno = sc.nextInt();	
 				System.out.print("\n수정 급여 : ");
 				int sal = sc.nextInt();
 				boolean updateFlag = dao.updateSal(empno, sal);
