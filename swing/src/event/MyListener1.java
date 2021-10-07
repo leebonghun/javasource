@@ -18,6 +18,9 @@ public class MyListener1 implements ActionListener {
 		System.out.println("e.getActionCommand()"+e.getActionCommand());
 		System.out.println("e.getID()"+e.getID());
 		System.out.println("e.getActionCommand()"+e.getSource());
+		
+		
+		
 	}
 
 }

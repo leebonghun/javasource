@@ -1,3 +1,5 @@
+
+//덧셈 계산기
 package event;
 
 import java.awt.BorderLayout;
@@ -11,6 +13,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -61,21 +64,21 @@ public class MyFrame5 extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e)  {
 		// TODO Auto-generated method stub
 		String cmd = e.getActionCommand();
+		if(cmd.equals("확인")) {
 		try {
 			
-			if(cmd.equals("확인")) {
 				int op1 = Integer.parseInt(num1.getText());
 				int op2 = Integer.parseInt(num2.getText());
 				int total = op1+op2;
 				result.setText(total+"");
-			}else  {
-				num1.setText("");
-				num2.setText("");
-				result.setText("");
-			}
 		} catch (Exception e2) {
-			System.out.println("잘못 입력했습니다");
+			JOptionPane.showMessageDialog(getParent(), "입력값을 확인해 주세요");
 			}
+		}else  {
+			num1.setText("");
+			num2.setText("");
+			result.setText("");
+		}
 	}
 	
 	public static void main(String[] args) {
