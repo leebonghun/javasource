@@ -240,7 +240,7 @@ public class PizzaTest extends JFrame implements ItemListener, ActionListener {
 			} else {
 				price1 += 3000;
 			}
-			System.out.println(price1 + price2 + price3);
+			System.out.println("종류 : "+price1+"토핑  : " + price2+"사이즈 : " + price3);
 		}
 
 	}
@@ -284,7 +284,7 @@ public class PizzaTest extends JFrame implements ItemListener, ActionListener {
 			price2 = 0;
 			price3 = 0;
 		}
-		System.out.println(price1 + price2 + price3);
+		System.out.println("종류 : "+price1+"토핑  : " + price2+"사이즈 : " + price3+"ㅇㅇㅇ");
 	}
 
 }

@@ -41,7 +41,7 @@ public class UserDAO {
 		
 		try {
 			con = getConnection();
-			String sql = "select * from userTBL";
+				String sql = "select * from userTBL";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
